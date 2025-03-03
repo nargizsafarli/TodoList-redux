@@ -7,10 +7,10 @@ function TodoList() {
     const todoss=useSelector((state)=>state.items);
     const dispatch=useDispatch()
   return (
-    <div className='main-container'>
+    <div className='list-container'>
       {todoss.map((el)=>(
-        <div key={el.id}>
-            {el.text}
+        <div key={el.id} className='list-items'>
+        <input value={el.text} type='text'/> 
         <button onClick={()=>dispatch(removeItem(el.id))} >X</button>
         </div>
       ))}

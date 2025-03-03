@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { addItem } from '../../Store/action';
 import { useDispatch } from 'react-redux';
+import "./TodoForm.css"
 
 function TodoForm() {
     const [text,setText]=useState("");
@@ -19,6 +20,7 @@ function TodoForm() {
 
   return (
     <div className='form-container'>
+      
       <input 
         placeholder='Add todo...'
         value={text}

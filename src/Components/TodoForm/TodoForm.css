@@ -1,0 +1,12 @@
+.form-container{
+    position: absolute;
+    right: 150px;
+    top: 150px;
+
+    display: flex;
+    gap: 10px;
+    input{
+        width: 300px;
+        padding: 10px 13px;
+    }
+}
