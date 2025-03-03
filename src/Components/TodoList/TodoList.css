@@ -3,6 +3,9 @@
     right: 140px;
     top: 200px;
     width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
 }
 .list-items{
@@ -10,10 +13,23 @@
     border:1px solid black;
     justify-content: space-between;
     padding: 10px 20px;
-
+    background-color: rgb(203, 155, 248);
     
     input{
-        padding: 9px 17px;
+        padding: 13px 17px;
+        width: 290px;  
+    }
+    button{
+        padding: 3px 5px;
+        background-color: rgb(185, 50, 167);
+        color: white;
+        font-weight: 900;
+        border: none;
+        transition: all 0.3s ease;
+
+        &:hover{
+            background-color: rgb(52, 10, 92);
+        }
     }
 
 }

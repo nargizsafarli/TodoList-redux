@@ -1,12 +1,43 @@
 .form-container{
     position: absolute;
-    right: 150px;
-    top: 150px;
-
+    right: 140px;
+    top: 50px;
+    align-items: center;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
+
+h1{
+    font-family: sans-serif;
+    font-weight: 900;
+    color: rgb(201, 49, 193);
+    
+}
+
+   
+}
+.form-item{
+  display: flex;
+  gap: 10px;
+  position: relative;
     input{
-        width: 300px;
-        padding: 10px 13px;
+        width: 360px;
+        border-radius: 25px;
+        padding: 13px 13px;
+    }
+    button{
+     position: absolute;
+     right: 0;
+     border-radius: 25px;
+     border: none;
+     top:1px;
+     padding: 12px 29px;
+     background-color: rgb(170, 42, 164);
+     color: white;
+     font-weight: 800;
+     transition: all 0.3s ease;
+     &:hover{
+        background-color: rgb(247, 83, 238);
+     }
     }
 }

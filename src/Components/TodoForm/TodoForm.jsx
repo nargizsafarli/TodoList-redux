@@ -20,15 +20,16 @@ function TodoForm() {
 
   return (
     <div className='form-container'>
-      
+      <h1>TODO APP</h1>
+      <div className='form-item'>
       <input 
         placeholder='Add todo...'
         value={text}
         onChange={(e)=>{setText(e.target.value)}}
         onKeyDown={handleKeyPress}
-        
       />
       <button onClick={handleAddTodo} >ADD</button>
+      </div>
     </div>
   )
 }
