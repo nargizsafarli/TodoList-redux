@@ -6,7 +6,6 @@ import "./TodoForm.css"
 function TodoForm() {
     const [text,setText]=useState("");
     const dispatch=useDispatch();
-    
     const handleAddTodo=()=>{
         if(text.trim()==="") return;
         dispatch(addItem(text));
@@ -25,7 +24,7 @@ function TodoForm() {
       <input 
         placeholder='Add todo...'
         value={text}
-        onChange={(e)=>{setText(e.target.value)}}
+        onChange={(e)=>setText(e.target.value)}
         onKeyDown={handleKeyPress}
       />
       <button onClick={handleAddTodo} >ADD</button>

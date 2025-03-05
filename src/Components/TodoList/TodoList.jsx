@@ -10,7 +10,7 @@ function TodoList() {
     <div className='list-container'>
       {todoss.map((el)=>(
         <div key={el.id} className='list-items'>
-        <input value={el.text} type='text'/> 
+        <input value={el.text} type='text' readOnly/> 
         <button onClick={()=>dispatch(removeItem(el.id))} >X</button>
         </div>
       ))}
